@@ -193,6 +193,7 @@ async function sendCompletedStatusReport(
 }
 
 async function run() {
+  console.log('HELLO WORLD');
   const startedAt = new Date();
   const logger = getActionsLogger();
   initializeEnvironment(getActionVersion());
@@ -261,6 +262,7 @@ async function run() {
     }
     core.endGroup();
 
+    console.log('HELLO WORLD');
     config = await initConfig({
       languagesInput: getOptionalInput("languages"),
       queriesInput: getOptionalInput("queries"),
